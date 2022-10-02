@@ -1,0 +1,8 @@
+@mixin  flexBox ($x, $y){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
+@mixin pageTopPadding {
+    padding-top: 100px;
+}

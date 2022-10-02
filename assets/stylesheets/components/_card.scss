@@ -1,0 +1,30 @@
+.card {
+  width: 350px;
+  height: 350px;
+  filter: drop-shadow(5px 5px 5px #d49d90);
+  position: relative;
+  transition: all .5s;
+
+  
+  .icons {
+    @include flexBox(center, center);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+
+    .title{
+      padding-top: 20px;
+      font-size: 30px;
+      font-weight: 600;
+      color: black;
+    }
+  }
+
+&:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+}
